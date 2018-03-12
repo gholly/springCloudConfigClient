@@ -1,13 +1,26 @@
 server:
   port: 9000
 
+
+
 spring:
   cloud:
     config:
       label: master
       uri: http://localhost:8888/
       profile: dev
+      discovery:
+        enabled: true
+    stream:
+      kafka:
+        binder:
+          zk-nodes: localhost:2181
+          brokers: localhost:9092
   application:
     name: config
+
+
+
+
 
 
