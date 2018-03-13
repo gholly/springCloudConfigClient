@@ -23,7 +23,7 @@ public class ClientApplication {
 
 
 
-    @Value("${test}")
+    @Value("${test1}")
     public String hh;
 
     @RequestMapping("/hjk")

@@ -11,13 +11,19 @@ spring:
       profile: dev
       discovery:
         enabled: true
+
     stream:
       kafka:
         binder:
           zk-nodes: localhost:2181
           brokers: localhost:9092
+    bus:
+      enabled: true
   application:
     name: config
+
+
+
 
 
 
