@@ -9,9 +9,6 @@ spring:
       label: master
       uri: http://localhost:8888/
       profile: dev
-      discovery:
-        enabled: true
-
     stream:
       kafka:
         binder:
@@ -22,7 +19,18 @@ spring:
   application:
     name: config
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 
+
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8001/eureka/
 
 
 
